@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vision Range</title>
+  <link rel="icon" href=".\images\Logo\icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+	form {
+	  color: white;
+	  padding-bottom: 30px; 
+	  padding-left: 15px;
+	}
+			
+	.bg-image{
+	  overflow: auto;
+	  position: relative;	 
+	}
+	
+	.bg-image:before {
+	  content: "";
+	  position: fixed;
+	  left: 0;
+	  right: 0;
+	  z-index: -1;
+	  display: block;
+	  background-image: url("bg.jpg");
+	  background-size:cover;
+	  width: 100%;
+	  height: 100%;
+
+	  -webkit-filter: blur(3px);
+	  <!-- -moz-filter: blur(5px); -->
+	  <!-- -o-filter: blur(5px); -->
+	  <!-- -ms-filter: blur(5px); -->
+	  filter: blur(15px);	  
+	}			
+
+	a>img.logo-navbar {
+	  width: 12em !important;
+	}
+	
+	.navbar-brand {
+	  display: flex;
+	  align-items: center;
+	}
+		
+	.navbar {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-image: url('bg.jpg');
+	}
+	
+	li.active {
+	  color: blue;
+	}
+	
+	.nav li a:hover {
+	  text-decoration: underline;
+	  display: block;
+	}
+	
+	footer {
+	  background-image: url('bg.jpg'); 
+	  padding-bottom: 10px; 
+	  padding-top: 10px; 
+	  padding-right: 15px;
+	  color: silver;
+	  font-family: Arial;
+	}
+	
+	.links li.active {
+	  background-color: #281439 !important;
+	}
+	
+	.links li a:hover{
+	  display: block;
+	  text-decoration: none !important;
+	  font-weight: bold;
+	  color: silver !important;
+	  background-color: #281439 !important;
+	}
+  </style>
+</head>
+<body>
+	<div class="bg-image">
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button hidden type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>  
+			  </button>
+			  <a class="navbar-brand" href="index.html"><img class="logo-navbar" src="./images/Logo/logo1.png" alt="Vision Range"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+				<li  class="active"><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contacts.html">Contacts</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		
+		<form>
+		  <div class="tab-content">
+			<div class="container nav active" style="text-align:center;"><br>
+				<img style="width: 100%" class="img-responsive" src=".\images\Home\HDK1.jpg" class="rounded" alt="pic">
+				<br><br>
+				<div class="row">
+					<div class="col-md-4">
+						<h3>Bring Devices Online</h3>
+						<p>Create new or retrofit existing equipment with IoT capabilities, or design and develop new devices and 
+						IoT applications from scratch, while following best practices for IoT security.</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Collect & Analyze Data</h3>
+						<p>Work with the Very team to aggregate data from your machines through an ETL pipeline, and then store and 
+						analyze it in a secure cloud environment.</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Improve Machine Health & Performance</h3>
+						<p>Achieve real-time asset health monitoring and proactively replace or upgrade equipment through predictive and 
+						preventative maintenance.</p>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</form>
+
+	</div>
+</body>
+
+<footer class="page-footer container-fluid">
+
+  <div>
+	<div class="links row">
+		<ul class="nav nav-pills list-inline list-unstyled nav-justified">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="contacts.html">Contacts</a></li>
+		</ul>
+	</div>
+  </div>
+  <br>
+  <div class="footer-copyright text-center">
+	<a href="visionrange.net">Vision Range LLC</a>
+	- 646-345-7842 <br> © 2020 Copyright
+  </div>
+</footer>
+</html>
